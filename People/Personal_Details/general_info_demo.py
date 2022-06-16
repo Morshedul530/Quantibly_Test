@@ -52,7 +52,8 @@ class People():
         time.sleep(2)
 
         # Click Add New Personnel
-        add_new_personnel = driver.find_element(By.XPATH, '//*[@id="app"]/div/div[3]/div[1]/div[3]/div/div/div[1]/div[2]/a')
+        add_new_personnel = driver.find_element(By.XPATH,
+                                                '//*[@id="app"]/div/div[3]/div[1]/div[3]/div/div/div[1]/div[2]/a')
         add_new_personnel.click()
         time.sleep(2)
 
@@ -142,7 +143,6 @@ class People():
         delete = driver.find_element(By.XPATH, '//*[@id="myTable"]/tbody/tr/td[1]/a[3]/i')
         delete.click()
         time.sleep(3)
-
 
 
 test_obj = People()
